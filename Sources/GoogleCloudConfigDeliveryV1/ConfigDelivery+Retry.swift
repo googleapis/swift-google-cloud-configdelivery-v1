@@ -53,14 +53,14 @@ extension Clients {
 
     public func listResourceBundles(
       request: ListResourceBundlesRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudConfigdeliveryV1.ListResourceBundlesResponse {
+    ) async throws -> GoogleCloudConfigDeliveryV1.ListResourceBundlesResponse {
       try await self._intercept(
         request: request,
         options: options,
         idempotent: true,
         action: {
           (r: ListResourceBundlesRequest, o: GoogleCloudGax.RequestOptions) async throws
-            -> GoogleCloudConfigdeliveryV1.ListResourceBundlesResponse
+            -> GoogleCloudConfigDeliveryV1.ListResourceBundlesResponse
           in
           return try await self.inner.listResourceBundles(request: r, options: o)
         })
@@ -68,14 +68,14 @@ extension Clients {
 
     public func getResourceBundle(
       request: GetResourceBundleRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudConfigdeliveryV1.ResourceBundle {
+    ) async throws -> GoogleCloudConfigDeliveryV1.ResourceBundle {
       try await self._intercept(
         request: request,
         options: options,
         idempotent: true,
         action: {
           (r: GetResourceBundleRequest, o: GoogleCloudGax.RequestOptions) async throws
-            -> GoogleCloudConfigdeliveryV1.ResourceBundle
+            -> GoogleCloudConfigDeliveryV1.ResourceBundle
           in
           return try await self.inner.getResourceBundle(request: r, options: o)
         })
@@ -128,14 +128,14 @@ extension Clients {
 
     public func listFleetPackages(
       request: ListFleetPackagesRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudConfigdeliveryV1.ListFleetPackagesResponse {
+    ) async throws -> GoogleCloudConfigDeliveryV1.ListFleetPackagesResponse {
       try await self._intercept(
         request: request,
         options: options,
         idempotent: true,
         action: {
           (r: ListFleetPackagesRequest, o: GoogleCloudGax.RequestOptions) async throws
-            -> GoogleCloudConfigdeliveryV1.ListFleetPackagesResponse
+            -> GoogleCloudConfigDeliveryV1.ListFleetPackagesResponse
           in
           return try await self.inner.listFleetPackages(request: r, options: o)
         })
@@ -143,14 +143,14 @@ extension Clients {
 
     public func getFleetPackage(
       request: GetFleetPackageRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudConfigdeliveryV1.FleetPackage {
+    ) async throws -> GoogleCloudConfigDeliveryV1.FleetPackage {
       try await self._intercept(
         request: request,
         options: options,
         idempotent: true,
         action: {
           (r: GetFleetPackageRequest, o: GoogleCloudGax.RequestOptions) async throws
-            -> GoogleCloudConfigdeliveryV1.FleetPackage
+            -> GoogleCloudConfigDeliveryV1.FleetPackage
           in
           return try await self.inner.getFleetPackage(request: r, options: o)
         })
@@ -203,14 +203,14 @@ extension Clients {
 
     public func listReleases(
       request: ListReleasesRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudConfigdeliveryV1.ListReleasesResponse {
+    ) async throws -> GoogleCloudConfigDeliveryV1.ListReleasesResponse {
       try await self._intercept(
         request: request,
         options: options,
         idempotent: true,
         action: {
           (r: ListReleasesRequest, o: GoogleCloudGax.RequestOptions) async throws
-            -> GoogleCloudConfigdeliveryV1.ListReleasesResponse
+            -> GoogleCloudConfigDeliveryV1.ListReleasesResponse
           in
           return try await self.inner.listReleases(request: r, options: o)
         })
@@ -218,14 +218,14 @@ extension Clients {
 
     public func getRelease(
       request: GetReleaseRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudConfigdeliveryV1.Release {
+    ) async throws -> GoogleCloudConfigDeliveryV1.Release {
       try await self._intercept(
         request: request,
         options: options,
         idempotent: true,
         action: {
           (r: GetReleaseRequest, o: GoogleCloudGax.RequestOptions) async throws
-            -> GoogleCloudConfigdeliveryV1.Release
+            -> GoogleCloudConfigDeliveryV1.Release
           in
           return try await self.inner.getRelease(request: r, options: o)
         })
@@ -278,14 +278,14 @@ extension Clients {
 
     public func listVariants(
       request: ListVariantsRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudConfigdeliveryV1.ListVariantsResponse {
+    ) async throws -> GoogleCloudConfigDeliveryV1.ListVariantsResponse {
       try await self._intercept(
         request: request,
         options: options,
         idempotent: true,
         action: {
           (r: ListVariantsRequest, o: GoogleCloudGax.RequestOptions) async throws
-            -> GoogleCloudConfigdeliveryV1.ListVariantsResponse
+            -> GoogleCloudConfigDeliveryV1.ListVariantsResponse
           in
           return try await self.inner.listVariants(request: r, options: o)
         })
@@ -293,14 +293,14 @@ extension Clients {
 
     public func getVariant(
       request: GetVariantRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudConfigdeliveryV1.Variant {
+    ) async throws -> GoogleCloudConfigDeliveryV1.Variant {
       try await self._intercept(
         request: request,
         options: options,
         idempotent: true,
         action: {
           (r: GetVariantRequest, o: GoogleCloudGax.RequestOptions) async throws
-            -> GoogleCloudConfigdeliveryV1.Variant
+            -> GoogleCloudConfigDeliveryV1.Variant
           in
           return try await self.inner.getVariant(request: r, options: o)
         })
@@ -353,14 +353,14 @@ extension Clients {
 
     public func listRollouts(
       request: ListRolloutsRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudConfigdeliveryV1.ListRolloutsResponse {
+    ) async throws -> GoogleCloudConfigDeliveryV1.ListRolloutsResponse {
       try await self._intercept(
         request: request,
         options: options,
         idempotent: true,
         action: {
           (r: ListRolloutsRequest, o: GoogleCloudGax.RequestOptions) async throws
-            -> GoogleCloudConfigdeliveryV1.ListRolloutsResponse
+            -> GoogleCloudConfigDeliveryV1.ListRolloutsResponse
           in
           return try await self.inner.listRollouts(request: r, options: o)
         })
@@ -368,14 +368,14 @@ extension Clients {
 
     public func getRollout(
       request: GetRolloutRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudConfigdeliveryV1.Rollout {
+    ) async throws -> GoogleCloudConfigDeliveryV1.Rollout {
       try await self._intercept(
         request: request,
         options: options,
         idempotent: true,
         action: {
           (r: GetRolloutRequest, o: GoogleCloudGax.RequestOptions) async throws
-            -> GoogleCloudConfigdeliveryV1.Rollout
+            -> GoogleCloudConfigDeliveryV1.Rollout
           in
           return try await self.inner.getRollout(request: r, options: o)
         })

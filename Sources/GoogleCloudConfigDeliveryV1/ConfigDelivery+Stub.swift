@@ -28,11 +28,11 @@ extension Clients {
   protocol ConfigDeliveryStub {
     func listResourceBundles(
       request: ListResourceBundlesRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudConfigdeliveryV1.ListResourceBundlesResponse
+    ) async throws -> GoogleCloudConfigDeliveryV1.ListResourceBundlesResponse
 
     func getResourceBundle(
       request: GetResourceBundleRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudConfigdeliveryV1.ResourceBundle
+    ) async throws -> GoogleCloudConfigDeliveryV1.ResourceBundle
 
     func createResourceBundle(
       request: CreateResourceBundleRequest, options: GoogleCloudGax.RequestOptions
@@ -48,11 +48,11 @@ extension Clients {
 
     func listFleetPackages(
       request: ListFleetPackagesRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudConfigdeliveryV1.ListFleetPackagesResponse
+    ) async throws -> GoogleCloudConfigDeliveryV1.ListFleetPackagesResponse
 
     func getFleetPackage(
       request: GetFleetPackageRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudConfigdeliveryV1.FleetPackage
+    ) async throws -> GoogleCloudConfigDeliveryV1.FleetPackage
 
     func createFleetPackage(
       request: CreateFleetPackageRequest, options: GoogleCloudGax.RequestOptions
@@ -68,11 +68,11 @@ extension Clients {
 
     func listReleases(
       request: ListReleasesRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudConfigdeliveryV1.ListReleasesResponse
+    ) async throws -> GoogleCloudConfigDeliveryV1.ListReleasesResponse
 
     func getRelease(
       request: GetReleaseRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudConfigdeliveryV1.Release
+    ) async throws -> GoogleCloudConfigDeliveryV1.Release
 
     func createRelease(
       request: CreateReleaseRequest, options: GoogleCloudGax.RequestOptions
@@ -88,11 +88,11 @@ extension Clients {
 
     func listVariants(
       request: ListVariantsRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudConfigdeliveryV1.ListVariantsResponse
+    ) async throws -> GoogleCloudConfigDeliveryV1.ListVariantsResponse
 
     func getVariant(
       request: GetVariantRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudConfigdeliveryV1.Variant
+    ) async throws -> GoogleCloudConfigDeliveryV1.Variant
 
     func createVariant(
       request: CreateVariantRequest, options: GoogleCloudGax.RequestOptions
@@ -108,11 +108,11 @@ extension Clients {
 
     func listRollouts(
       request: ListRolloutsRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudConfigdeliveryV1.ListRolloutsResponse
+    ) async throws -> GoogleCloudConfigDeliveryV1.ListRolloutsResponse
 
     func getRollout(
       request: GetRolloutRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudConfigdeliveryV1.Rollout
+    ) async throws -> GoogleCloudConfigDeliveryV1.Rollout
 
     func suspendRollout(
       request: SuspendRolloutRequest, options: GoogleCloudGax.RequestOptions
@@ -161,7 +161,7 @@ extension Clients {
 
     public func listResourceBundles(
       request: ListResourceBundlesRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudConfigdeliveryV1.ListResourceBundlesResponse {
+    ) async throws -> GoogleCloudConfigDeliveryV1.ListResourceBundlesResponse {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.parent as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.parent' is not set or is empty")
@@ -181,12 +181,12 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudConfigdeliveryV1.ListResourceBundlesResponse.self, from: data)
+        GoogleCloudConfigDeliveryV1.ListResourceBundlesResponse.self, from: data)
     }
 
     public func getResourceBundle(
       request: GetResourceBundleRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudConfigdeliveryV1.ResourceBundle {
+    ) async throws -> GoogleCloudConfigDeliveryV1.ResourceBundle {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.name as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.name' is not set or is empty")
@@ -201,7 +201,7 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudConfigdeliveryV1.ResourceBundle.self, from: data)
+        GoogleCloudConfigDeliveryV1.ResourceBundle.self, from: data)
     }
 
     public func createResourceBundle(
@@ -286,7 +286,7 @@ extension Clients {
 
     public func listFleetPackages(
       request: ListFleetPackagesRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudConfigdeliveryV1.ListFleetPackagesResponse {
+    ) async throws -> GoogleCloudConfigDeliveryV1.ListFleetPackagesResponse {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.parent as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.parent' is not set or is empty")
@@ -306,12 +306,12 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudConfigdeliveryV1.ListFleetPackagesResponse.self, from: data)
+        GoogleCloudConfigDeliveryV1.ListFleetPackagesResponse.self, from: data)
     }
 
     public func getFleetPackage(
       request: GetFleetPackageRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudConfigdeliveryV1.FleetPackage {
+    ) async throws -> GoogleCloudConfigDeliveryV1.FleetPackage {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.name as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.name' is not set or is empty")
@@ -326,7 +326,7 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudConfigdeliveryV1.FleetPackage.self, from: data)
+        GoogleCloudConfigDeliveryV1.FleetPackage.self, from: data)
     }
 
     public func createFleetPackage(
@@ -411,7 +411,7 @@ extension Clients {
 
     public func listReleases(
       request: ListReleasesRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudConfigdeliveryV1.ListReleasesResponse {
+    ) async throws -> GoogleCloudConfigDeliveryV1.ListReleasesResponse {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.parent as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.parent' is not set or is empty")
@@ -431,12 +431,12 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudConfigdeliveryV1.ListReleasesResponse.self, from: data)
+        GoogleCloudConfigDeliveryV1.ListReleasesResponse.self, from: data)
     }
 
     public func getRelease(
       request: GetReleaseRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudConfigdeliveryV1.Release {
+    ) async throws -> GoogleCloudConfigDeliveryV1.Release {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.name as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.name' is not set or is empty")
@@ -451,7 +451,7 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudConfigdeliveryV1.Release.self, from: data)
+        GoogleCloudConfigDeliveryV1.Release.self, from: data)
     }
 
     public func createRelease(
@@ -533,7 +533,7 @@ extension Clients {
 
     public func listVariants(
       request: ListVariantsRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudConfigdeliveryV1.ListVariantsResponse {
+    ) async throws -> GoogleCloudConfigDeliveryV1.ListVariantsResponse {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.parent as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.parent' is not set or is empty")
@@ -553,12 +553,12 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudConfigdeliveryV1.ListVariantsResponse.self, from: data)
+        GoogleCloudConfigDeliveryV1.ListVariantsResponse.self, from: data)
     }
 
     public func getVariant(
       request: GetVariantRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudConfigdeliveryV1.Variant {
+    ) async throws -> GoogleCloudConfigDeliveryV1.Variant {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.name as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.name' is not set or is empty")
@@ -573,7 +573,7 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudConfigdeliveryV1.Variant.self, from: data)
+        GoogleCloudConfigDeliveryV1.Variant.self, from: data)
     }
 
     public func createVariant(
@@ -654,7 +654,7 @@ extension Clients {
 
     public func listRollouts(
       request: ListRolloutsRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudConfigdeliveryV1.ListRolloutsResponse {
+    ) async throws -> GoogleCloudConfigDeliveryV1.ListRolloutsResponse {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.parent as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.parent' is not set or is empty")
@@ -674,12 +674,12 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudConfigdeliveryV1.ListRolloutsResponse.self, from: data)
+        GoogleCloudConfigDeliveryV1.ListRolloutsResponse.self, from: data)
     }
 
     public func getRollout(
       request: GetRolloutRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudConfigdeliveryV1.Rollout {
+    ) async throws -> GoogleCloudConfigDeliveryV1.Rollout {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.name as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.name' is not set or is empty")
@@ -694,7 +694,7 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudConfigdeliveryV1.Rollout.self, from: data)
+        GoogleCloudConfigDeliveryV1.Rollout.self, from: data)
     }
 
     public func suspendRollout(
